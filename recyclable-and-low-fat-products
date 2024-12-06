@@ -1,0 +1,25 @@
+/*This problem is called Recyclable and Low Fat Products. It has been provided directly by Leetcode.
+
+Information provided:
+- Table: Products
+- Column names & Types:
+	- product_id, int
+  - low_fats, enum
+  - recyclable, enum
+- product_id is primary key
+- low_fats is an ENUM (category) of type ('y', 'n') where 'y' means this product is low fat and 'n' means that it is not low fat.
+- recyclable is an ENUM (category) of types ('y', 'n') where 'y' means it is recyclable and 'n' indicates that it is not recyclable.
+ 
+ Guidelines:
+- Write a solution to find the ids of products that are both low fat and recyclable.
+- Return the result table in any order.
+ */
+
+SELECT *
+FROM products
+WHERE low_fats LIKE 'y' AND recyclable LIKE 'y';
+
+/* Results:
+- 22/22 test cases passed.
+- Status: accepted
+*/
