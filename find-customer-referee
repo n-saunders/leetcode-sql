@@ -1,0 +1,23 @@
+/*This problem is called Find Customer Referee. It has been provided directly by Leetcode.
+
+Information provided:
+- Table: Customer
+- Column names & Types:
+  - id, int
+  - name, varchar
+  - referee_id, int
+- id is primary key
+ 
+Guidelines:
+- find the names of the customers that are not referred by the customer with id = 2.
+- return result table in any order.
+*/
+
+SELECT name
+FROM Customer
+WHERE referee_id !=2 OR referee_id IS NULL;
+
+/* Results:
+- 19/19 test cases passed.
+- Status: accepted.
+*/
