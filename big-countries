@@ -1,0 +1,25 @@
+/*This problem is called Big Countries. It has been provided directly by Leetcode.
+
+Information provided:
+- Table: World
+- Column names & Types:
+	- name, varchar
+    - continent, varchar
+    - area, int
+    - population, int
+    - gdp, bigint
+ - name is primary key
+ - country is deemed big if it has an area of at least three million OR it has population of at least 25 million
+ 
+ Guidelines:
+ - Write a solution to find the name, population, and area of the big countries.
+ - Return the result table in any order.
+ */
+ 
+ SELECT name, population, area
+ FROM world
+ WHERE area >= 3000000 OR population >= 25000000;
+
+/* RESULTS:
+- 6/6 test cases passed.
+- Status: Accepted. */
